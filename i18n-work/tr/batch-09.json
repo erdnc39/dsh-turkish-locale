@@ -1,0 +1,38 @@
+{
+ "batch": "09",
+ "dicts": {
+  "approval": {
+   "waiting": "Onay bekleniyor",
+   "detail.aria": "Onay ayrıntıları",
+   "escalation": "Araç {toolName} ayrıcalıklı yürütme istiyor",
+   "reject": "Reddet",
+   "allowOnce": "Bir kez izin ver"
+  },
+  "settings.plugins": {
+   "nav": "Yerleşik eklentiler",
+   "title": "Yerleşik eklentiler",
+   "intro": "Bu dağıtımın içerdiği eklentileri inceleyin.",
+   "tabs": "Eklenti görünümleri",
+   "empty": "Bu dağıtım hiçbir eklenti görünümü sunmuyor."
+  },
+  "sidebar": {
+   "session.new": "Yeni Oturum",
+   "session.new.label": "Yeni oturum",
+   "toggle.open": "Kenar çubuğunu aç",
+   "toggle.collapse": "Kenar çubuğunu daralt",
+   "panels.label": "Genel paneller"
+  },
+  "documentMarkdown": {
+   "viewer.label": "Markdown",
+   "code.copy": "Kopyala",
+   "code.copied": "Kopyalandı",
+   "footnotes": "Dipnotlar"
+  },
+  "documentHtml": {
+   "title": "HTML",
+   "frame": "HTML belge önizlemesi",
+   "loading": "Belge işleniyor...",
+   "failed": "Bu HTML belgesi önizlenemedi."
+  }
+ }
+}

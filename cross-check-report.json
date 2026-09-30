@@ -1,0 +1,417 @@
+[
+ {
+  "en": "Repeat",
+  "variants": [
+   {
+    "tr": "Tekrar",
+    "where": [
+     "01a:conversation.detail.schedule.frequency"
+    ]
+   },
+   {
+    "tr": "Tekrarla",
+    "where": [
+     "04a:schedule.manager.rule.repeat"
+    ]
+   }
+  ]
+ },
+ {
+  "en": "Scheduled",
+  "variants": [
+   {
+    "tr": "Zamanlandı",
+    "where": [
+     "01a:conversation.detail.schedule.scheduled"
+    ]
+   },
+   {
+    "tr": "Planlandı",
+    "where": [
+     "02:trajectory.details.scheduled"
+    ]
+   }
+  ]
+ },
+ {
+  "en": "Running",
+  "variants": [
+   {
+    "tr": "Çalışıyor",
+    "where": [
+     "01a:conversation.detail.status.running",
+     "01b:conversation.bash.running",
+     "01b:conversation.row.running",
+     "01b:conversation.terminal.running",
+     "03a:pluginManager.rowPhaseActive",
+     "03a:pluginManager.terminalRunning",
+     "03b:workspace.status.running",
+     "04b:cordis.status.running",
+     "05:chat.row.running",
+     "07a:settings.pluginInventory.active",
+     "08:agent-team.memberStatus.running",
+     "08:workflowRun.status.running"
+    ]
+   },
+   {
+    "tr": "Çalışanlar",
+    "where": [
+     "03b:job.section.live"
+    ]
+   }
+  ]
+ },
+ {
+  "en": "Inactive",
+  "variants": [
+   {
+    "tr": "Devre dışı",
+    "where": [
+     "01a:conversation.detail.status.inactive",
+     "04a:schedule.manager.status.inactive"
+    ]
+   },
+   {
+    "tr": "Etkisiz",
+    "where": [
+     "08:agent-team.memberStatus.inactive"
+    ]
+   }
+  ]
+ },
+ {
+  "en": "Time",
+  "variants": [
+   {
+    "tr": "Zaman",
+    "where": [
+     "01b:conversation.detail.field.time",
+     "02:trajectory.column.time"
+    ]
+   },
+   {
+    "tr": "Saat",
+    "where": [
+     "04a:schedule.manager.timing.time"
+    ]
+   }
+  ]
+ },
+ {
+  "en": "Started",
+  "variants": [
+   {
+    "tr": "Başlatıldı",
+    "where": [
+     "01b:conversation.detail.receipt.started"
+    ]
+   },
+   {
+    "tr": "Başlangıç",
+    "where": [
+     "02:trajectory.timing.started"
+    ]
+   }
+  ]
+ },
+ {
+  "en": "Answer",
+  "variants": [
+   {
+    "tr": "Yanıtla",
+    "where": [
+     "01b:conversation.ask.reopen"
+    ]
+   },
+   {
+    "tr": "Yanıt",
+    "where": [
+     "03b:workspace.status.compact.answer"
+    ]
+   }
+  ]
+ },
+ {
+  "en": "Search",
+  "variants": [
+   {
+    "tr": "Arama",
+    "where": [
+     "01b:conversation.tool.title.search",
+     "01b:conversation.tool.title.webSearch"
+    ]
+   },
+   {
+    "tr": "Ara",
+    "where": [
+     "02:trajectory.toolbar.searchPlaceholder",
+     "07a:common.search"
+    ]
+   }
+  ]
+ },
+ {
+  "en": "Edit",
+  "variants": [
+   {
+    "tr": "Düzenleme",
+    "where": [
+     "01b:conversation.tool.title.edit"
+    ]
+   },
+   {
+    "tr": "Düzenle",
+    "where": [
+     "02:settings.models.edit",
+     "03a:pluginManager.installEdit",
+     "07a:common.edit"
+    ]
+   }
+  ]
+ },
+ {
+  "en": "Run Cordis Plugin",
+  "variants": [
+   {
+    "tr": "Cordis eklentisini çalıştır",
+    "where": [
+     "01b:conversation.tool.title.runCordis"
+    ]
+   },
+   {
+    "tr": "Cordis Eklentisi Çalıştır",
+    "where": [
+     "04b:cordis.row.runTitle"
+    ]
+   }
+  ]
+ },
+ {
+  "en": "Running…",
+  "variants": [
+   {
+    "tr": "Çalışıyor…",
+    "where": [
+     "01b:conversation.details.running",
+     "02:trajectory.code.running"
+    ]
+   },
+   {
+    "tr": "Çalıştırılıyor…",
+    "where": [
+     "05:chat.command.running"
+    ]
+   }
+  ]
+ },
+ {
+  "en": "This session is already in use, possibly by another running DSH instance (such as dsh web or the desktop app). Quit other running DSH instances and try again.",
+  "variants": [
+   {
+    "tr": "Bu oturum zaten kullanımda, muhtemelen başka bir çalışan DSH örneği (örneğin dsh web veya masaüstü uygulaması) tarafından. Çalışan diğer DSH örneklerini kapatıp tekrar deneyin.",
+    "where": [
+     "01b:conversation.error.sessionInUse"
+    ]
+   },
+   {
+    "tr": "Bu oturum zaten kullanılıyor, muhtemelen çalışan bir başka DSH örneği tarafından (dsh web veya masaüstü uygulaması gibi). Diğer çalışan DSH örneklerini kapatıp yeniden deneyin.",
+    "where": [
+     "07b:model.error.sessionInUse"
+    ]
+   }
+  ]
+ },
+ {
+  "en": "Done",
+  "variants": [
+   {
+    "tr": "Tamamlandı",
+    "where": [
+     "01b:conversation.terminal.done"
+    ]
+   },
+   {
+    "tr": "Tamam",
+    "where": [
+     "03a:pluginManager.terminalDone",
+     "03a:pluginManager.installClose"
+    ]
+   }
+  ]
+ },
+ {
+  "en": "Calls",
+  "variants": [
+   {
+    "tr": "Çağrılar",
+    "where": [
+     "02:trajectory.toolbar.calls"
+    ]
+   },
+   {
+    "tr": "Çağrı",
+    "where": [
+     "06a:settings.ourFreeModel.speed.calls"
+    ]
+   }
+  ]
+ },
+ {
+  "en": "Think",
+  "variants": [
+   {
+    "tr": "Düşünme",
+    "where": [
+     "02:trajectory.column.think"
+    ]
+   },
+   {
+    "tr": "Düşün",
+    "where": [
+     "05:chat.message.think"
+    ]
+   }
+  ]
+ },
+ {
+  "en": "Continue",
+  "variants": [
+   {
+    "tr": "Devam et",
+    "where": [
+     "02:settings.models.welcomeContinue"
+    ]
+   },
+   {
+    "tr": "Devam",
+    "where": [
+     "05:settings.account.onboardingContinue"
+    ]
+   }
+  ]
+ },
+ {
+  "en": "en",
+  "variants": [
+   {
+    "tr": "tr",
+    "where": [
+     "04a:schedule.manager.time.locale",
+     "06b:schedule.catalog.time.locale",
+     "08:sidebarExcel.language"
+    ]
+   },
+   {
+    "tr": "en",
+    "where": [
+     "05:settings.account.onboardingArtworkLocale"
+    ]
+   }
+  ]
+ },
+ {
+  "en": "Compact",
+  "variants": [
+   {
+    "tr": "Kompakt",
+    "where": [
+     "05:chat.settings.performance.compact",
+     "05:chat.settings.transcript.compact"
+    ]
+   },
+   {
+    "tr": "Sıkıştır",
+    "where": [
+     "07b:command.label.compact"
+    ]
+   }
+  ]
+ },
+ {
+  "en": "Next",
+  "variants": [
+   {
+    "tr": "İleri",
+    "where": [
+     "05:settings.account.onboardingLater",
+     "07b:question.action.next"
+    ]
+   },
+   {
+    "tr": "Sonraki",
+    "where": [
+     "07a:common.next"
+    ]
+   }
+  ]
+ },
+ {
+  "en": "More",
+  "variants": [
+   {
+    "tr": "Daha fazla",
+    "where": [
+     "05:settings.account.more",
+     "07a:common.more"
+    ]
+   },
+   {
+    "tr": "Çok",
+    "where": [
+     "06a:settings.ourFreeModel.heat.legendMore"
+    ]
+   }
+  ]
+ },
+ {
+  "en": "Interrupted",
+  "variants": [
+   {
+    "tr": "Kesintiye uğradı",
+    "where": [
+     "05:deliverables.row.stopped"
+    ]
+   },
+   {
+    "tr": "Kesildi",
+    "where": [
+     "08:workflowRun.status.interrupted"
+    ]
+   }
+  ]
+ },
+ {
+  "en": "Update",
+  "variants": [
+   {
+    "tr": "Güncelleme",
+    "where": [
+     "06a:settings.ourFreeModel.level.update"
+    ]
+   },
+   {
+    "tr": "Güncelle",
+    "where": [
+     "07a:settings.desktop.update.available"
+    ]
+   }
+  ]
+ },
+ {
+  "en": "Files",
+  "variants": [
+   {
+    "tr": "Files",
+    "where": [
+     "06b:open-in-app.app.filemanager"
+    ]
+   },
+   {
+    "tr": "Dosyalar",
+    "where": [
+     "08:sidebarFiles.type.label"
+    ]
+   }
+  ]
+ }
+]

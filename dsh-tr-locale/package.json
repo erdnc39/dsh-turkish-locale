@@ -1,0 +1,30 @@
+{
+  "name": "dsh-tr-locale",
+  "description": "DSH web GUI language pack plugin: registers the Türkçe language into the locale catalog and centrally carries the tr dictionaries for every first-party and profile plugin namespace (missing keys fall back to English through the SDK chain).",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "dsh": {
+    "engines": {
+      "dsh": ">=0.2.0-rc.1"
+    },
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [],
+      "platform": "web"
+    }
+  },
+  "license": "MIT"
+}

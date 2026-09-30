@@ -1,0 +1,114 @@
+[
+ {
+  "batch": "01",
+  "keys": 369,
+  "namespaces": [
+   "conversation(369)"
+  ]
+ },
+ {
+  "batch": "02",
+  "keys": 340,
+  "namespaces": [
+   "trajectory(192)",
+   "settings.models(113)",
+   "settings.subagent(35)"
+  ]
+ },
+ {
+  "batch": "03",
+  "keys": 340,
+  "namespaces": [
+   "pluginManager(189)",
+   "workspace(112)",
+   "job(39)"
+  ]
+ },
+ {
+  "batch": "04",
+  "keys": 340,
+  "namespaces": [
+   "schedule.manager(187)",
+   "voice-input(101)",
+   "cordis(51)",
+   "shortcuts.layout(1)"
+  ]
+ },
+ {
+  "batch": "05",
+  "keys": 340,
+  "namespaces": [
+   "chat(186)",
+   "settings.account(93)",
+   "deliverables(60)",
+   "settings.locale(1)"
+  ]
+ },
+ {
+  "batch": "06",
+  "keys": 340,
+  "namespaces": [
+   "settings.ourFreeModel(166)",
+   "schedule.catalog(70)",
+   "shortcuts(56)",
+   "open-in-app(45)",
+   "sidebarCodePreview(3)"
+  ]
+ },
+ {
+  "batch": "07",
+  "keys": 339,
+  "namespaces": [
+   "settings.agentPreset(41)",
+   "common(41)",
+   "settings.pluginInventory(40)",
+   "subagent(39)",
+   "settings(34)",
+   "sidebarRight(34)",
+   "question(31)",
+   "command(28)",
+   "sidebarTerminal(28)",
+   "model(23)"
+  ]
+ },
+ {
+  "batch": "08",
+  "keys": 340,
+  "namespaces": [
+   "sidebarBrowser(26)",
+   "agent-team(25)",
+   "sidebarDocumentPreview(22)",
+   "feedback(20)",
+   "settings.webSearch(18)",
+   "workflowRun(18)",
+   "permission.access(17)",
+   "plan(17)",
+   "sidebarFiles(17)",
+   "sidebarPdf(15)",
+   "sidebarOffice(15)",
+   "sidebarExcel(15)",
+   "settings.shell(14)",
+   "directory-browser(13)",
+   "goal(12)",
+   "settings.permission(12)",
+   "settings.agentLoop(12)",
+   "reference(11)",
+   "sidebarImage(11)",
+   "slash.menu(9)",
+   "settings.theme(9)",
+   "skill(8)",
+   "settings.sessionLog(4)"
+  ]
+ },
+ {
+  "batch": "09",
+  "keys": 23,
+  "namespaces": [
+   "approval(5)",
+   "settings.plugins(5)",
+   "sidebar(5)",
+   "documentMarkdown(4)",
+   "documentHtml(4)"
+  ]
+ }
+]

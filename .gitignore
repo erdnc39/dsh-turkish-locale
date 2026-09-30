@@ -1,0 +1,10 @@
+# Regenerable extraction artifacts — rebuild with `node extract-from-asar.mjs`
+/clients/
+/client-excel-chunk.js
+/web-shell-index.js
+/asar-header.json
+# Third-party reference material — fetch with `node fetch-tgz.mjs`
+/ru-pack/
+/dsh-i18n.tgz
+# Dependencies
+node_modules/
