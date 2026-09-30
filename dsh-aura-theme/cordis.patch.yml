@@ -1,0 +1,9 @@
+# bundle patch for the dsh-aura-theme plugin: inserts its plugin row into the
+# profile roster. Applied as a profile bundle layer (the `dsh.bundle.patch`
+# manifest field); the single row mounts BOTH halves — the host half is a
+# no-op (pure browser plugin) and the browser half registers the `aura`
+# theme into the ui-theme registry, mounts the Aura stylesheet and adds the
+# Settings -> General toggle row.
+- insert:
+    - id: aura-theme
+      name: 'dsh-aura-theme'

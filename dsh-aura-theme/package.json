@@ -1,0 +1,40 @@
+{
+  "name": "dsh-aura-theme",
+  "version": "0.1.0",
+  "description": "Aura theme plugin for the DeepSeek Harness web GUI: a registered 'aura' theme with a warm orange-black palette, frosted-glass (buzlu cam) surfaces, animated border-beam + background-beam on the chat window, and the CodeNewRoman Nerd Font.",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "theme",
+    "aura",
+    "frosted-glass",
+    "nerd-font",
+    "codenewroman"
+  ],
+  "license": "MIT",
+  "dsh": {
+    "engines": {
+      "dsh": ">=0.2.0-rc.1"
+    },
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": []
+    }
+  }
+}
