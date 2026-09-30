@@ -1,10 +1,8 @@
 # DeepSeek Harness — Türkçe Dil Desteği
 
-> 🇬🇧 **English:** Turkish language support for the DeepSeek Harness desktop/web GUI — a `dsh-tr-locale` language pack (58 namespaces / 2,771 keys) for the web interface, plus a 165-string `tr` table wired into the Electron shell for the caption menu, popup menus, welcome and update dialogs. The same repository also ships **`dsh-aura-theme`**, a creative theme plugin (frosted glass, warm orange–black palette, chat border/background beams, CodeNewRoman Nerd Font).
+> 🇬🇧 **English:** Turkish language support for the DeepSeek Harness desktop/web GUI — a `dsh-tr-locale` language pack (58 namespaces / 2,771 keys) for the web interface, plus a 165-string `tr` table wired into the Electron shell for the caption menu, popup menus, welcome and update dialogs.
 
 DeepSeek Harness'ın **web arayüzünü** ve **masaüstü kabuğunu** (üst menü şeridi, açılır menüler, karşılama/güncelleme pencereleri) Türkçe'ye çeviren tam bir çözüm. Çeviriler eksik olursa arayüz otomatik olarak İngilizce'ye düşer — asla kırılmaz.
-
-Bu depo ikinci bir kurulabilir bundle daha içerir: **[Aura teması](#aura-teması-dsh-aura-theme)** — buzlu cam yüzeyler, turuncu–siyah sıcak palet, sohbet penceresinde gezen ışın efektleri ve CodeNewRoman Nerd Font.
 
 ---
 
@@ -12,7 +10,6 @@ Bu depo ikinci bir kurulabilir bundle daha içerir: **[Aura teması](#aura-temas
 
 - [Ne yapar?](#ne-yapar)
 - [Hızlı kurulum](#hızlı-kurulum)
-- [Aura teması (dsh-aura-theme)](#aura-teması-dsh-aura-theme)
 - [Depo yapısı](#depo-yapısı)
 - [Çeviri hattı (pipeline)](#çeviri-hattı-pipeline)
 - [Masaüstü (Electron) yaması](#masaüstü-electron-yaması)
@@ -58,57 +55,6 @@ Sayfa yenilendikten sonra **Ayarlar → Genel → Dil** listesinde **Türkçe** 
 
 ---
 
-## Aura teması (dsh-aura-theme)
-
-Tema motorunu (`dsh-client-ui-theme.js`) inceleyip üzerine kurulmuş **yaratıcı bir tema eklentisi**. Saf bir tarayıcı (client) bundle'ıdır; host yarısı bilinçli olarak boştur.
-
-### Ne yapar?
-
-1. **`aura` temasını kayıt defterine ekler** — `ctx.theme.register({ id: "aura", colorScheme: "dark", tokens })` ile ~55 `--dsw-alias-*` / `--dsw-specific-*` override'ı. Aktifleştiğinde ui-layout'un `ThemePresenter`ı token'ları `body` üzerine yazar ve `body[data-ds-dark-theme]` açılır.
-2. **Otomatik etkinleşir** ve tercihi `localStorage` (`dsh-aura-theme.enabled`) içinde saklar.
-3. **Her kuralı `data-dsh-aura` (html kökü) niteliğine anahtarlar** — tema kapalıyken tek bir Aura kuralı bile uygulanmaz.
-4. **Ayarlar → Genel** bölümüne kendi anahtar satırını ekler (`settings.general.item`, `order: 12`).
-
-### Renk paleti (turuncu–siyah, sıcak)
-
-| Katma | Değer |
-|---|---|
-| `--dsw-alias-bg-base` | `#0b0705` sıcak siyah |
-| `--dsw-alias-bg-layer-1/2/3` | `#150f09` → `#1d150d` → `#261c11` |
-| `--dsw-alias-label-primary` | `#f8ede2` sıcak kâğıt beyazı |
-| `--dsw-alias-brand-primary` / butonlar | `#ff8a1f` → `#ffa149` |
-| `--dsw-alias-border-l1..l4` | `#ff8a1f1f` → `#ffb06666` |
-| Menü / kenar çubuğu | yarı saydam + `--dsw-menu-backdrop-filter: blur(26px)` |
-
-Üstelik sıcak shiki sözdizimi, sıcak scrollbar, toast/tooltip ve success/warn/error renkleri.
-
-### Efektler
-
-- **Border beam** — sohbet penceresinin (`[data-conversation-content]`) 10px oluğunda, maskeli konik degrade ile dönen ışın halkası. `@property --dsh-aura-beam-angle` kayıtlı özel değişken olduğu için Chromium'da gerçek animasyon; halka metne, kaydırma çubuğuna ve yazma alanına hiç girmiyor.
-- **Background beam** — `[data-conversation-scroll]` arka planında süpüren diyagonal huzme + üstte sıcak hale. Arka plan katmanı olduğu için içerik asla üstüne çıkmıyor.
-- **Buzlu cam** — yazma alanı `backdrop-filter: blur(20px) saturate(160%)`, kenar çubuğu 24px, açılan menüler 26px.
-- **CodeNewRoman Nerd Font** — hem `--dsw-font-family` hem `--ds-font-family-code`; kaynak sırası yerel kurulum → jsDelivr → Raw GitHub, `font-display: swap`, erişilemezse `ui-monospace → Consolas → monospace`.
-- `prefers-reduced-motion: reduce` altında beam animasyonları durur.
-
-### Kurulum
-
-```powershell
-# bu depoyu klonlayın, sonra:
-dsh plugin --profile desktop add <klon-yolu>\dsh-aura-theme
-```
-
-veya Web arayüzü **Eklentiler** sayfasından / `plugin_manager` `install_bundle` ile bu dizini verin. Kurulum bundle'ı otomatik etkinleştirir ve canlı profilde HMR sayesinde sayfayı yenilemeden uygulanır.
-
-**Anahtar:** *Ayarlar → Genel → Aura Teması*. Appearance satırında Açık/Koyu/Sistem seçmek Aura'yı kapatır (ui-theme'in kalıcı `preference` alanı izlenerek kasıtlı yapıldı).
-
-### Test
-
-```powershell
-node test-aura-theme.mjs   # gerçek lib/client.js üzerinden 31 kontrol
-```
-
----
-
 ## Depo yapısı
 
 ```
@@ -117,14 +63,6 @@ dsh-tr-locale/            Web GUI dil paketi (kurulabilir bundle)
   package.json            dsh.client + dsh.bundle.patch deklarasyonları
   cordis.patch.yml        profile satır ekler (id: tr-locale)
   README.md               paket belgesi
-
-dsh-aura-theme/          Aura teması eklentisi (kurulabilir bundle)
-  lib/client.js           tema kaydı + palet + efekt CSS'i + ayar satırı
-  lib/index.js            host yarısı (no-op)
-  package.json            dsh.client + dsh.bundle.patch deklarasyonları
-  cordis.patch.yml        profile satır ekler (id: aura-theme)
-  README.md               paket belgesi
-test-aura-theme.mjs       Aura paketi için 31 kontrollü duman testi
 
 i18n-work/
   en/                     çıkarılmış İngilizce sözlükler (partiler)
@@ -205,9 +143,6 @@ Copy-Item "…\resources\app.asar.bak" "…\resources\app.asar" -Force
 | E2E test (gerçek `LocaleRuntime`) | ✅ `tr` aktif, `İptal`/`Kapat`/`Dil` translate, fallback zinciri sağlam |
 | Asar yeniden inşa | ✅ 11.470 kayıt, SHA256 eşleşmesi, üç dosyada `const tr` doğrulandı |
 | Profil kurulumu | ✅ `enabled` + `installed` + `applied` (`dsh-tr-locale` bundle'ı) |
-| Aura duman testi (31/31) | ✅ kayıt, otomatik etkinleşme, adoption kurtarması, Appearance izleyicisi, ayar satırı, temizlik |
-| Aura canlı doğrulama | ✅ `Theme.listTokens` içinde `--dsw-font-family`, `--dsw-menu-backdrop-filter`… "registered by the current Client composition" |
-| Profil kurulumu (Aura) | ✅ `enabled` + `installed` + `applied` (`dsh-aura-theme` bundle'ı, satır `include:aura-theme`) |
 
 ---
 

@@ -8,3 +8,5 @@
 /dsh-i18n.tgz
 # Dependencies
 node_modules/
+# Sibling repository — dsh-aura-theme has its own .git (github.com/erdnc39/dsh-aura-theme)
+/dsh-aura-theme/
