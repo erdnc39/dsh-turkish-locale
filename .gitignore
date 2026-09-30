@@ -1,12 +1,17 @@
-# Regenerable extraction artifacts — rebuild with `node extract-from-asar.mjs`
+# Workspace-only material — the extraction/translation pipeline, extracted
+# shell references and batch work files live here and are NOT part of the
+# dsh-tr-locale plugin.
+/workspace-extras/
+# Sibling repository — dsh-aura-theme has its own .git
+# (github.com/erdnc39/dsh-aura-theme)
+/dsh-aura-theme/
+# Regenerable extraction artifacts, should they ever land in the root again
 /clients/
 /client-excel-chunk.js
 /web-shell-index.js
 /asar-header.json
-# Third-party reference material — fetch with `node fetch-tgz.mjs`
+# Third-party reference material
 /ru-pack/
 /dsh-i18n.tgz
 # Dependencies
 node_modules/
-# Sibling repository — dsh-aura-theme has its own .git (github.com/erdnc39/dsh-aura-theme)
-/dsh-aura-theme/
